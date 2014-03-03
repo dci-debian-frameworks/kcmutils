@@ -20,13 +20,13 @@ Homepage: https://projects.kde.org/projects/frameworks/kcmutils
 Package: libkf5kcmutils-dev
 Section: libdevel
 Architecture: any
-Depends: libkf5kcmutils4 (= ${binary:Version}), ${misc:Depends}
+Depends: libkf5kcmutils5 (= ${binary:Version}), ${misc:Depends}
 Description: Extra APIs to write KConfig modules.
  Some utility classes for KSettings, KCModule and KPlugin.
  .
  Contains development files for kcmutils.
  
-Package: libkf5kcmutils4
+Package: libkf5kcmutils5
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -34,11 +34,11 @@ Description: Extra APIs to write KConfig modules.
  KCMUtils provides various classes to work with KCModules. KCModules can be
  created with the KConfigWidgets framework.
 
-Package: libkf5kcmutils4-dbg
+Package: libkf5kcmutils5-dbg
 Priority: extra
 Section: debug
 Architecture: any
-Depends: libkf5kcmutils4 (= ${binary:Version}), ${misc:Depends}
+Depends: libkf5kcmutils5 (= ${binary:Version}), ${misc:Depends}
 Description: Extra APIs to write KConfig modules.
  KCMUtils provides various classes to work with KCModules. KCModules can be
  created with the KConfigWidgets framework.
