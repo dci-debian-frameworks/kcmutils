@@ -1,5 +1,5 @@
 # SymbolsHelper-Confirmed: 4.96.0 amd64
-libKF5KCMUtils.so.4 libkf5kcmutils4 #MINVER#
+libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN12KCModuleInfo7Private7loadAllEv@Base 4.96.0
  _ZN12KCModuleInfo7PrivateC1E28QExplicitlySharedDataPointerI8KServiceE@Base 4.96.0
  _ZN12KCModuleInfo7PrivateC1Ev@Base 4.96.0
