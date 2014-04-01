@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4.96.0 amd64
+# SymbolsHelper-Confirmed: 4.98.0 amd64
 libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN12KCModuleInfo7Private7loadAllEv@Base 4.96.0
  _ZN12KCModuleInfo7PrivateC1E28QExplicitlySharedDataPointerI8KServiceE@Base 4.96.0
@@ -209,8 +209,6 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZNK13KCModuleProxy10realModuleEv@Base 4.96.0
  _ZNK13KCModuleProxy11dbusServiceEv@Base 4.96.0
  _ZNK13KCModuleProxy15minimumSizeHintEv@Base 4.96.0
- _ZNK13KCModuleProxy15rootOnlyMessageEv@Base 4.96.0
- _ZNK13KCModuleProxy18useRootOnlyMessageEv@Base 4.96.0
  _ZNK13KCModuleProxy7buttonsEv@Base 4.96.0
  _ZNK13KCModuleProxy7changedEv@Base 4.96.0
  _ZNK13KCModuleProxy8dbusPathEv@Base 4.96.0
