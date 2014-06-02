@@ -5,27 +5,27 @@ Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Scarlett Clark <scarlett@scarlettgatelyclark.com>
 Build-Depends: cmake,
                debhelper (>= 9.0.0),
-               extra-cmake-modules (>= 0.0.13),
-               libkf5attica-dev (>= 4.99.0),
-               libkf5auth-dev (>= 4.99.0),
-               libkf5codecs-dev (>= 4.99.0),
-               libkf5completion-dev (>= 4.99.0),
-               libkf5config-dev (>= 4.99.0),
-               libkf5configwidgets-dev (>= 4.99.0),
-               libkf5coreaddons-dev (>= 4.99.0),
-               libkf5dbusaddons-dev (>= 4.99.0),
-               libkf5globalaccel-dev (>= 4.99.0),
-               libkf5guiaddons-dev (>= 4.99.0),
-               libkf5i18n-dev (>= 4.99.0),
-               libkf5iconthemes-dev (>= 4.99.0),
-               libkf5itemviews-dev (>= 4.99.0),
-               libkf5kjs-dev (>= 4.99.0),
-               libkf5service-dev (>= 4.99.0),
-               libkf5sonnet-dev (>= 4.99.0),
-               libkf5textwidgets-dev (>= 4.99.0),
-               libkf5widgetsaddons-dev (>= 4.99.0),
-               libkf5windowsystem-dev (>= 4.99.0),
-               libkf5xmlgui-dev (>= 4.99.0),
+               extra-cmake-modules (>= 0.0.14),
+               libkf5attica-dev (>= 4.100.0),
+               libkf5auth-dev (>= 4.100.0),
+               libkf5codecs-dev (>= 4.100.0),
+               libkf5completion-dev (>= 4.100.0),
+               libkf5config-dev (>= 4.100.0),
+               libkf5configwidgets-dev (>= 4.100.0),
+               libkf5coreaddons-dev (>= 4.100.0),
+               libkf5dbusaddons-dev (>= 4.100.0),
+               libkf5globalaccel-dev (>= 4.100.0),
+               libkf5guiaddons-dev (>= 4.100.0),
+               libkf5i18n-dev (>= 4.100.0),
+               libkf5iconthemes-dev (>= 4.100.0),
+               libkf5itemviews-dev (>= 4.100.0),
+               libkf5kjs-dev (>= 4.100.0),
+               libkf5service-dev (>= 4.100.0),
+               libkf5sonnet-dev (>= 4.100.0),
+               libkf5textwidgets-dev (>= 4.100.0),
+               libkf5widgetsaddons-dev (>= 4.100.0),
+               libkf5windowsystem-dev (>= 4.100.0),
+               libkf5xmlgui-dev (>= 4.100.0),
                pkg-kde-tools,
                qtbase5-dev
 Standards-Version: 3.9.5
@@ -34,12 +34,13 @@ Homepage: https://projects.kde.org/projects/frameworks/kcmutils
 Package: libkf5kcmutils-dev
 Section: libdevel
 Architecture: any
-Depends: libkf5kcmutils5 (= ${binary:Version}), ${misc:Depends},
- libkf5configwidgets,
- libkf5iconthemes,
- libkf5itemviews,
- libkf5service,
- libkf5xmlgui
+Depends: libkf5configwidgets,
+         libkf5iconthemes,
+         libkf5itemviews,
+         libkf5kcmutils5 (= ${binary:Version}),
+         libkf5service,
+         libkf5xmlgui,
+         ${misc:Depends}
 Description: Extra APIs to write KConfig modules.
  Some utility classes for KSettings, KCModule and KPlugin.
  .
