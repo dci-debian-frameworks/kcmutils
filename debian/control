@@ -31,6 +31,15 @@ Build-Depends: cmake,
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/frameworks/kcmutils
 
+Package: libkf5kcmutils-dev
+Section: libdevel
+Architecture: any
+Depends: libkf5kcmutils5 (= ${binary:Version}), ${misc:Depends}
+Description: Extra APIs to write KConfig modules.
+ Some utility classes for KSettings, KCModule and KPlugin.
+ .
+ Contains development files for kcmutils.
+
 Package: libkf5kcmutils5
 Section: libdevel
 Architecture: any
