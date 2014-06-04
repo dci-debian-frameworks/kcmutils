@@ -5,7 +5,6 @@ kcmutils (4.100.0-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Scarlett Clark ]
   * Bump depends versions
-  * Bump depends versions
 
   [ Harald Sitter ]
   * Install qt pri file to -dev package

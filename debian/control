@@ -34,12 +34,12 @@ Homepage: https://projects.kde.org/projects/frameworks/kcmutils
 Package: libkf5kcmutils-dev
 Section: libdevel
 Architecture: any
-Depends: libkf5configwidgets,
-         libkf5iconthemes,
-         libkf5itemviews,
+Depends: libkf5configwidgets-dev,
+         libkf5iconthemes-dev,
+         libkf5itemviews-dev,
          libkf5kcmutils5 (= ${binary:Version}),
-         libkf5service,
-         libkf5xmlgui,
+         libkf5service-dev,
+         libkf5xmlgui-dev,
          ${misc:Depends}
 Description: Extra APIs to write KConfig modules.
  Some utility classes for KSettings, KCModule and KPlugin.
