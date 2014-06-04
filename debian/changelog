@@ -7,6 +7,9 @@ kcmutils (4.100.0-0ubuntu1) UNRELEASED; urgency=medium
   * Bump depends versions
   * Bump depends versions
 
+  [ Harald Sitter ]
+  * Install qt pri file to -dev package
+
  -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 02 Jun 2014 13:34:30 +0100
 
 kcmutils (4.99.0-0ubuntu1) trusty; urgency=medium
