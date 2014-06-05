@@ -47,7 +47,6 @@ Description: Extra APIs to write KConfig modules.
  Contains development files for kcmutils.
 
 Package: libkf5kcmutils5
-Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: same
