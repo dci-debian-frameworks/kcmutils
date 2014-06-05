@@ -54,7 +54,6 @@ Multi-Arch: same
 Description: Extra APIs to write KConfig modules.
  KCMUtils provides various classes to work with KCModules. KCModules can be
  created with the KConfigWidgets framework.
-Pre-Depends: ${misc:Pre-Depends}
 
 Package: libkf5kcmutils5-dbg
 Priority: extra
