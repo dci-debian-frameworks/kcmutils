@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4.98.0 amd64
+# SymbolsHelper-Confirmed: 5.0.0 amd64
 libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN12KCModuleInfo7Private7loadAllEv@Base 4.96.0
  _ZN12KCModuleInfo7PrivateC1E28QExplicitlySharedDataPointerI8KServiceE@Base 4.96.0
@@ -37,6 +37,7 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN13KCModuleProxyD0Ev@Base 4.96.0
  _ZN13KCModuleProxyD1Ev@Base 4.96.0
  _ZN13KCModuleProxyD2Ev@Base 4.96.0
+ _ZN13KCMultiDialog10closeEventEP11QCloseEvent@Base 5.0.0
  _ZN13KCMultiDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4.96.0
  _ZN13KCMultiDialog11qt_metacastEPKc@Base 4.96.0
  _ZN13KCMultiDialog13slotOkClickedEv@Base 4.96.0
