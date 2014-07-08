@@ -5,6 +5,7 @@ kcmutils (5.0.0-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Scarlett Clark ]
   * batchpatch symbols 
+  * Update watch file to stable
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 02 Jul 2014 00:30:44 +0200
 
