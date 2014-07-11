@@ -50,25 +50,13 @@ Description: Extra APIs to write KConfig modules.
 
 Package: libkf5kcmutils5
 Architecture: any
-Depends: libkf5kcmutils-data (= ${source:Version}),
-         ${misc:Depends},
+Depends: ${misc:Depends},
          ${shlibs:Depends}
+Replaces: libkf5kcmutils-data
 Multi-Arch: same
 Description: Extra APIs to write KConfig modules.
  KCMUtils provides various classes to work with KCModules. KCModules can be
  created with the KConfigWidgets framework.
-
-Package: libkf5kcmutils-data
-Architecture: all
-Depends: ${misc:Depends}
-Multi-Arch: foreign
-Breaks: libkf5kcmutils5 (<= 4.100.0-0ubuntu1~ubuntu14.10~ppa1)
-Replaces: libkf5kcmutils5 (<= 4.100.0-0ubuntu1~ubuntu14.10~ppa1)
-Description: Extra APIs to write KConfig modules.
- KCMUtils provides various classes to work with KCModules. KCModules can be
- created with the KConfigWidgets framework.
- .
- This package contains the data files.
 
 Package: libkf5kcmutils5-dbg
 Priority: extra
