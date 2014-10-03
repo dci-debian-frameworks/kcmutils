@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.0.0 amd64
+# SymbolsHelper-Confirmed: 5.2.0+git20141003 i386
 libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN12KCModuleInfo7Private7loadAllEv@Base 4.96.0
  _ZN12KCModuleInfo7PrivateC1E28QExplicitlySharedDataPointerI8KServiceE@Base 4.96.0
@@ -51,6 +51,7 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN13KCMultiDialog5clearEv@Base 4.96.0
  _ZN13KCMultiDialog9addModuleERK12KCModuleInfoP15KPageWidgetItemRK11QStringList@Base 4.96.0
  _ZN13KCMultiDialog9addModuleERK7QStringRK11QStringList@Base 4.96.0
+ _ZN13KCMultiDialog9showEventEP10QShowEvent@Base 5.2.0+git20141003
  _ZN13KCMultiDialogC1EP11KPageWidgetP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4.96.0
  _ZN13KCMultiDialogC1EP7QWidget@Base 4.96.0
  _ZN13KCMultiDialogC1ER20KCMultiDialogPrivateP11KPageWidgetP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4.96.0
