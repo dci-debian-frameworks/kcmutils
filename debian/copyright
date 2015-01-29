@@ -3,13 +3,12 @@ Upstream-Name: kcmutils
 Source: https://projects.kde.org/projects/frameworks/kcmutils
 
 Files: *
-Copyright: © 2002-2004, 2006-2007 Matthias Kretz <kretz@kde.org>
-           © 2004 Frans Englich <frans.englich@telia.com>
-           © 2000 Matthias Elter <elter@kde.org>
-           © 2002-2003 Daniel Molkentin <molkentin@kde.org>
-           © 1999 Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
-           © 2006-2007 Rafael Fernández López <ereslibre@kde.org>
-           © 2006 Tobias Koenig <tokoe@kde.org>
+Copyright: 2002-2003, Daniel Molkentin <molkentin@kde.org>
+           2004, Frans Englich <frans.englich@telia.com>
+           2000, Matthias Elter <elter@kde.org>
+           1999, Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
+           2002-2007, Matthias Kretz <kretz@kde.org>
+           2006-2007, Rafael Fernández López <ereslibre@kde.org>
 License: LGPL-2
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Library General Public
@@ -32,13 +31,17 @@ Files: src/kcmodulecontainer.cpp
        src/kcmodulecontainer.h
        src/kcmultidialog.cpp
        src/kcmultidialog.h
-       debian/*
-Copyright: 2004 Frans Englich <frans.englich@telia.com>
-           2000 Matthias Elter <elter@kde.org>
-           2003 Daniel Molkentin <molkentin@kde.org>
-           2003,2006 Matthias Kretz <kretz@kde.org>
-           2006 Tobias Koenig <tokoe@kde.org>
-           2014 Scarlett Clark <scarlett@scarlettgatelyclark.com>
+Copyright: 2003, Daniel Molkentin <molkentin@kde.org>
+           2004, Frans Englich <frans.englich@telia.com>
+           2000, Matthias Elter <elter@kde.org>
+           2003-2006, Matthias Kretz <kretz@kde.org>
+           2006, Tobias Koenig <tokoe@kde.org>
+License: LGPL-2+
+
+Files: debian/*
+Copyright: 2014, Scarlett Clark <scarlett@scarlettgatelyclark.com>
+License: LGPL-2+
+
 License: LGPL-2+
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Library General Public
