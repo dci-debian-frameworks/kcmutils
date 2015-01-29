@@ -1,1 +1,3 @@
-usr/share/*
+usr/share/kservicetypes5/kcmodule.desktop
+usr/share/kservicetypes5/kcmoduleinit.desktop
+usr/share/locale/*/*/kcmutils5.mo
