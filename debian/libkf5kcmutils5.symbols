@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.2.0+git20141003 i386
+# SymbolsHelper-Confirmed: 5.8.0+git20150316.0112+15.04 amd64 i386
 libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN12KCModuleInfo7Private7loadAllEv@Base 4.96.0
  _ZN12KCModuleInfo7PrivateC1E28QExplicitlySharedDataPointerI8KServiceE@Base 4.96.0
@@ -72,6 +72,7 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN15KPluginSelector15configCommittedERK10QByteArray@Base 4.96.0
  _ZN15KPluginSelector16staticMetaObjectE@Base 4.96.0
  _ZN15KPluginSelector18updatePluginsStateEv@Base 4.96.0
+ _ZN15KPluginSelector25setConfigurationArgumentsERK11QStringList@Base 5.8.0+git20150316.0112+15.04
  _ZN15KPluginSelector4loadEv@Base 4.96.0
  _ZN15KPluginSelector4saveEv@Base 4.96.0
  _ZN15KPluginSelector7Private10ProxyModelC1EPS0_P7QObject@Base 4.96.0
@@ -218,6 +219,7 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZNK13KCModuleProxy9quickHelpEv@Base 4.96.0
  _ZNK13KCMultiDialog10metaObjectEv@Base 4.96.0
  _ZNK15KPluginSelector10metaObjectEv@Base 4.96.0
+ _ZNK15KPluginSelector22configurationArgumentsEv@Base 5.8.0+git20150316.0112+15.04
  _ZNK15KPluginSelector7Private10ProxyModel15subSortLessThanERK11QModelIndexS4_@Base 4.96.0
  _ZNK15KPluginSelector7Private10ProxyModel16filterAcceptsRowEiRK11QModelIndex@Base 4.96.0
  _ZNK15KPluginSelector7Private10metaObjectEv@Base 4.96.0
