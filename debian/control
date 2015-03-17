@@ -30,7 +30,7 @@ Build-Depends: cmake,
                qtbase5-dev
 Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/frameworks/kcmutils
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/frameworks/kcmutils.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/frameworks/kcmutils.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/frameworks/kcmutils.git
 
 Package: libkf5kcmutils-dev
