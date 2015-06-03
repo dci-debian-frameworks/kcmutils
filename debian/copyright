@@ -46,10 +46,6 @@ Copyright: 2009-2013, Yasen Pramatarov <yasen@lindeas.com>
            2006-2009, Zlatko Popov <zlatkopopov@fsa-bg.org>
 License: GPL
 
-Files: COPYING.LIB
-Copyright: 1991-1999, Free Software Foundation, Inc
-License: LGPL-2.1+
-
 Files: debian/*
 Copyright: 2014, Scarlett Clark <scarlett@scarlettgatelyclark.com>
 License: LGPL-2+
