@@ -26,21 +26,12 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/frameworks/kcmutils.git
 Package: libkf5kcmutils-dev
 Section: libdevel
 Architecture: any
-<<<<<<< HEAD
-Depends: libkf5configwidgets-dev (>= 5.15.0~),
-         libkf5iconthemes-dev (>= 5.15.0~),
-         libkf5itemviews-dev (>= 5.15.0~),
-         libkf5kcmutils5 (= ${binary:Version}),
-         libkf5service-dev (>= 5.15.0~),
-         libkf5xmlgui-dev (>= 5.15.0~),
-=======
 Depends: libkf5configwidgets-dev (>= 5.16.0~),
          libkf5iconthemes-dev (>= 5.16.0~),
          libkf5itemviews-dev (>= 5.16.0~),
          libkf5kcmutils5 (= ${binary:Version}),
          libkf5service-dev (>= 5.16.0~),
          libkf5xmlgui-dev (>= 5.16.0~),
->>>>>>> master
          ${misc:Depends}
 Description: Extra APIs to write KConfig modules.
  Some utility classes for KSettings, KCModule and KPlugin.
