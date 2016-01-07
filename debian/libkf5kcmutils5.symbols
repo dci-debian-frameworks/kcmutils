@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.8.0+git20150316.0112+15.04 amd64 i386
+# SymbolsHelper-Confirmed: 5.18.0 amd64 i386
 libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN12KCModuleInfo7Private7loadAllEv@Base 4.96.0
  _ZN12KCModuleInfo7PrivateC1E28QExplicitlySharedDataPointerI8KServiceE@Base 4.96.0
@@ -278,6 +278,7 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZTVN9KSettings10PluginPageE@Base 4.96.0
  _ZTVN9KSettings16ComponentsDialogE@Base 4.96.0
  _ZTVN9KSettings6DialogE@Base 4.96.0
+ _ZZZN10KAboutDataC4ERK7QStringS2_S2_S2_N13KAboutLicense10LicenseKeyES2_S2_S2_S2_Ed_NKUlvE_clEvE15qstring_literal@Base 5.18.0
  (c++)"non-virtual thunk to KCModuleContainer::~KCModuleContainer()@Base" 4.96.0
  (c++)"non-virtual thunk to KCModuleProxy::~KCModuleProxy()@Base" 4.96.0
  (c++)"non-virtual thunk to KCMultiDialog::~KCMultiDialog()@Base" 4.96.0
