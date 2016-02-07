@@ -59,15 +59,3 @@ Description: Extra APIs to write KConfig modules.
  created with the KConfigWidgets framework.
  .
  This package contains the data files.
-
-Package: libkf5kcmutils5-dbg
-Priority: extra
-Section: debug
-Architecture: any
-Multi-Arch: same
-Depends: libkf5kcmutils5 (= ${binary:Version}), ${misc:Depends}
-Description: Extra APIs to write KConfig modules.
- KCMUtils provides various classes to work with KCModules. KCModules can be
- created with the KConfigWidgets framework.
- .
- Contains debug symbols for kcmutils.
