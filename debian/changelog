@@ -1,6 +1,6 @@
-kcmutils (5.20.0-1~1.gbp74533c) UNRELEASED; urgency=medium
+kcmutils (5.20.0-1~2.gbp5aa878) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @74533c6ee47819ba50eb836735b057de523dbd2a **
+  ** SNAPSHOT build @5aa87880fe196800bb6a08f3800345e633d12bbf **
 
   [ Maximiliano Curia ]
   * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
@@ -13,8 +13,9 @@ kcmutils (5.20.0-1~1.gbp74533c) UNRELEASED; urgency=medium
   * Update build-deps and deps with the info from cmake
 
   [ Maximiliano Curia ]
+  * Update acc test script
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Wed, 30 Mar 2016 11:06:35 +0200
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Fri, 01 Apr 2016 17:06:18 +0200
 
 kcmutils (5.19.0-1) experimental; urgency=medium
 
