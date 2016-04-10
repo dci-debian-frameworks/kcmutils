@@ -1,6 +1,6 @@
-kcmutils (5.20.0-1~3.gbp2ab6b0) UNRELEASED; urgency=medium
+kcmutils (5.21.0-1~1.gbp2423c2) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @2ab6b0bb66310b75796f4d233b9ea7caf47ef1c0 **
+  ** SNAPSHOT build @2423c281c33ef92cc46eddc2134db0f184e68a37 **
 
   [ Maximiliano Curia ]
   * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
@@ -15,8 +15,14 @@ kcmutils (5.20.0-1~3.gbp2ab6b0) UNRELEASED; urgency=medium
   [ Maximiliano Curia ]
   * Update acc test script
   * UNRELEASED
+  * uscan no longer supports more than one main upstream tarball being listed
 
- -- Maximiliano Curia <jenkins@amadeus.gnuservers.com.ar>  Fri, 01 Apr 2016 17:06:33 +0200
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Sun, 10 Apr 2016 10:06:32 +0200
 
 kcmutils (5.19.0-1) experimental; urgency=medium
 
