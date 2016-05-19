@@ -1,6 +1,6 @@
-kcmutils (5.22.0-1~1.gbpc1b8f9) UNRELEASED; urgency=medium
+kcmutils (5.22.0-1~2.gbp58972b) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @c1b8f9fd43da892fe77f7dc2fce7676e7d53c2eb **
+  ** SNAPSHOT build @58972be12710b205ccda6ff3b6d93411269315ec **
 
   [ Maximiliano Curia ]
   * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
@@ -8,6 +8,7 @@ kcmutils (5.22.0-1~1.gbpc1b8f9) UNRELEASED; urgency=medium
   * debian/control: Update Vcs-Browser and Vcs-Git fields
   * debian/control: Update Vcs-Browser and Vcs-Git fields
   * Drop qt5-qmltooling-plugins build dependency
+  * Update copyright information
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
@@ -24,7 +25,7 @@ kcmutils (5.22.0-1~1.gbpc1b8f9) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sun, 15 May 2016 18:06:10 +0200
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Thu, 19 May 2016 16:06:16 +0200
 
 kcmutils (5.19.0-1) experimental; urgency=medium
 
