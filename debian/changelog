@@ -1,10 +1,9 @@
-kcmutils (5.23.0-1~1.gbp53853d) UNRELEASED; urgency=medium
+kcmutils (5.23.0-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @53853d0ddf984fb11f122ac79140f14e380c5d11 **
-
+  [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Mon, 13 Jun 2016 00:06:26 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 22 Jun 2016 23:46:58 +0200
 
 kcmutils (5.22.0-1) unstable; urgency=medium
 
