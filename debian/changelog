@@ -1,17 +1,12 @@
-kcmutils (5.25.0-1~2.gbp3502f1) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @3502f165f5bb2dd79c89b831ed6cf602098cdcd4 **
+kcmutils (5.25.0-1) unstable; urgency=medium
 
   [ Automatic packaging ]
-  ** SNAPSHOT build @07b1cfd4d91e7441a318bc71d83281f25b5752a3 **
-
-  * Update build-deps and deps with the info from cmake
   * Update build-deps and deps with the info from cmake
 
   [ Maximiliano Curia ]
   * Bump group breaks (5.25)
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Wed, 17 Aug 2016 22:06:30 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 20 Aug 2016 16:47:26 +0200
 
 kcmutils (5.23.0-1) unstable; urgency=medium
 
