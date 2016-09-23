@@ -5,6 +5,7 @@ Source: https://projects.kde.org/projects/frameworks/kcmutils
 Files: *
 Copyright: 2002-2003, Daniel Molkentin <molkentin@kde.org>
            2004, Frans Englich <frans.englich@telia.com>
+           2014, Marco Martin <mart@kde.org>
            2000, Matthias Elter <elter@kde.org>
            1999, Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
            2002-2007, Matthias Kretz <kretz@kde.org>
@@ -12,14 +13,14 @@ Copyright: 2002-2003, Daniel Molkentin <molkentin@kde.org>
            2009, Adriaan de Groot, Mustapha Abubakar, Ibrahim Dasuna
            2006, Canonical Ltd, and Rosetta Contributors 2006
            1998, Erez Nir <erez-n@actcom.co.il>
-           2000-2008, Free Software Foundation, Inc
+           1997-2012, Free Software Foundation, Inc
            2008-2009, K Desktop Environment
            2005, KDE Armenian translation team
            2005, KDE Russian translation team
-           2000-2003, KDE e.v
+           2000-2004, KDE e.v
            2007, KDE i18n Project for Vietnamese
            1999-2003, Meni Livne <livne@kde.org>
-           2008, This_file_is_part_of_KDE
+           2002-2014, This_file_is_part_of_KDE
            2001, translate.org.za
 License: LGPL-2
 
