@@ -1,14 +1,15 @@
-kcmutils (5.26.0-1~1.gbp80a25e) UNRELEASED; urgency=medium
+kcmutils (5.26.0-1~2.gbp69b128) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @80a25ebd275b46ea74634c4acae71a44ee2c71c0 **
+  ** SNAPSHOT build @69b128631df6ee4f57c17fe9a8a0ddde8af03b14 **
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
 
   [ Harald Sitter ]
   * Fix missing-license-paragraph-in-dep5-copyright for LGPL-2.1+
+  * Fix missing-license-paragraph-in-dep5-copyright for LGPL-2.1+
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sat, 10 Sep 2016 18:06:44 +0200
+ -- Harald Sitter <sitter@kde.org>  Thu, 29 Sep 2016 11:42:06 +0200
 
 kcmutils (5.25.0-1) unstable; urgency=medium
 
