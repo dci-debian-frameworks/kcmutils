@@ -1,10 +1,13 @@
-kcmutils (5.27.0-1~1.gbp0cc1c9) UNRELEASED; urgency=medium
+kcmutils (5.27.0-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @0cc1c95297b963a2b104de515fd97e55f9d76ad4 **
-
+  [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sat, 08 Oct 2016 12:06:51 +0200
+  [ Maximiliano Curia ]
+  * New upstream release (5.27)
+  * Bump group breaks (5.27)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 15 Oct 2016 17:07:25 +0200
 
 kcmutils (5.26.0-1) unstable; urgency=medium
 
