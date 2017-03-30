@@ -1,0 +1,26 @@
+From: Kai Uwe Broulik <kde@privat.broulik.de>
+Date: Wed, 8 Feb 2017 12:13:07 +0100
+Subject: [KCModuleQML] Pass the window as context for paletteChanged
+
+This disconnects the connection when the window goes away otherwise it might crash.
+
+CHANGELOG: Fixed potential crash in QML KCMs when application palette changes
+
+Differential Revision: https://phabricator.kde.org/D4493
+---
+ src/kcmoduleqml.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/kcmoduleqml.cpp b/src/kcmoduleqml.cpp
+index a7c23aa..a36d339 100644
+--- a/src/kcmoduleqml.cpp
++++ b/src/kcmoduleqml.cpp
+@@ -111,7 +111,7 @@ void KCModuleQml::showEvent(QShowEvent *event)
+     widget->setResizeMode(QQuickWidget::SizeRootObjectToView);
+     d->quickWindow = widget->quickWindow();
+     d->quickWindow->setColor(QGuiApplication::palette().window().color());
+-    connect(qApp, &QGuiApplication::paletteChanged, [=]() {
++    connect(qApp, &QGuiApplication::paletteChanged, d->quickWindow, [=]() {
+         d->quickWindow->setColor(QGuiApplication::palette().window().color());
+     });
+ 
