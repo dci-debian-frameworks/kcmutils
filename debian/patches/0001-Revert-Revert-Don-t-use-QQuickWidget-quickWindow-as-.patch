@@ -1,93 +1,63 @@
-From ba34fdab9bd24ecfff5bf9a034362e081694a6c6 Mon Sep 17 00:00:00 2001
-From: Rohan Garg <rohan@garg.io>
-Date: Fri, 2 Jun 2017 16:01:13 +0200
-Subject: [PATCH] Revert "Revert "Don't use QQuickWidget::quickWindow() as it
- was added in Qt 5.5""
-
-This reverts commit dbc2f83cd264fc1bfbb3321bb0f1ec8e2df1cef1.
----
- src/kcmoduleqml.cpp | 26 ++++++++++++--------------
- 1 file changed, 12 insertions(+), 14 deletions(-)
-
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index e886a6c..ba1e3ab 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -17,7 +17,7 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+ include(KDECMakeSettings)
+ 
+ set(REQUIRED_QT_VERSION 5.6.0)
+-find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus Qml Quick QuickWidgets)
++find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus Qml Quick)
+ 
+ 
+ include(GenerateExportHeader)
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 0a17f4a..1678652 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -28,7 +28,6 @@ target_link_libraries(KF5KCMUtils
+     Qt5::DBus       # dbus usage in kcmoduleproxy.cpp
+     Qt5::Qml
+     Qt5::Quick
+-    Qt5::QuickWidgets
+     KF5::CoreAddons
+     KF5::I18n
+     KF5::IconThemes     # KIconLoader
 diff --git a/src/kcmoduleqml.cpp b/src/kcmoduleqml.cpp
-index 3191ddf..1165c61 100644
+index 3191ddf..70b8a68 100644
 --- a/src/kcmoduleqml.cpp
 +++ b/src/kcmoduleqml.cpp
-@@ -24,7 +24,6 @@
- #include <QtQml>
- #include <QQmlEngine>
- #include <QQmlContext>
--#include <QQuickWindow>
+@@ -27,7 +27,6 @@
+ #include <QQuickWindow>
  #include <QQuickItem>
  #include <QGuiApplication>
- #include <QQuickWidget>
-@@ -40,12 +39,12 @@ class KCModuleQmlPrivate
- {
- public:
-     KCModuleQmlPrivate(KQuickAddons::ConfigModule *cm)
--        : quickWindow(nullptr),
-+        : quickWidget(Q_NULLPTR),
-           configModule(cm)
-     {
-     }
+-#include <QQuickWidget>
  
--    QQuickWindow *quickWindow;
-+    QQuickWidget *quickWidget;
-     KQuickAddons::ConfigModule *configModule;
- };
- 
-@@ -100,41 +99,40 @@ KCModuleQml::~KCModuleQml()
- 
- void KCModuleQml::showEvent(QShowEvent *event)
- {
--    if (d->quickWindow || !d->configModule->mainUi()) {
-+    if (d->quickWidget || !d->configModule->mainUi()) {
-         KCModule::showEvent(event);
-         return;
-     }
+ #include <kdeclarative/kdeclarative.h>
+ #include <kquickaddons/configmodule.h>
+@@ -107,20 +106,16 @@ void KCModuleQml::showEvent(QShowEvent *event)
  
      QVBoxLayout* layout = new QVBoxLayout(this);
  
 -    QQuickWidget *widget = new QQuickWidget(d->configModule->engine(), this);
 -    widget->setResizeMode(QQuickWidget::SizeRootObjectToView);
 -    d->quickWindow = widget->quickWindow();
--    d->quickWindow->setColor(QGuiApplication::palette().window().color());
--    connect(qApp, &QGuiApplication::paletteChanged, d->quickWindow, [=]() {
--        d->quickWindow->setColor(QGuiApplication::palette().window().color());
-+    d->quickWidget = new QQuickWidget(d->configModule->engine(), this);
-+    d->quickWidget->setResizeMode(QQuickWidget::SizeRootObjectToView);
-+    d->quickWidget->setClearColor(QGuiApplication::palette().window().color());
-+    connect(qApp, &QGuiApplication::paletteChanged, [=]() {
-+        d->quickWidget->setClearColor(QGuiApplication::palette().window().color());
++    d->quickWindow = new QQuickWindow();
+     d->quickWindow->setColor(QGuiApplication::palette().window().color());
+     connect(qApp, &QGuiApplication::paletteChanged, d->quickWindow, [=]() {
+         d->quickWindow->setColor(QGuiApplication::palette().window().color());
      });
  
-     QQmlComponent *component = new QQmlComponent(d->configModule->engine(), this);
-     component->setData(QByteArrayLiteral("import QtQuick 2.3\nItem{}"), QUrl());
-     QObject *root = component->create();
+-    QQmlComponent *component = new QQmlComponent(d->configModule->engine(), this);
+-    component->setData(QByteArrayLiteral("import QtQuick 2.3\nItem{}"), QUrl());
+-    QObject *root = component->create();
 -    widget->setContent(QUrl(), component, root);
-+    d->quickWidget->setContent(QUrl(), component, root);
- 
+-
 -    d->configModule->mainUi()->setParentItem(widget->rootObject());
-+    d->configModule->mainUi()->setParentItem(d->quickWidget->rootObject());
++    //The created widget takes ownership of the QWindow
++    QWidget *widget = QWidget::createWindowContainer(d->quickWindow, this);
++ 
++    d->configModule->mainUi()->setParentItem(d->quickWindow->contentItem());
  
      //set anchors
      QQmlExpression expr(d->configModule->engine()->rootContext(), d->configModule->mainUi(), QStringLiteral("parent"));
-     QQmlProperty prop(d->configModule->mainUi(), QStringLiteral("anchors.fill"));
-     prop.write(expr.evaluate());
- 
--    layout->addWidget(widget);
-+    layout->addWidget(d->quickWidget);
-     KCModule::showEvent(event);
- }
- 
- void KCModuleQml::focusInEvent(QFocusEvent *event)
- {
-     Q_UNUSED(event)
--    d->quickWindow->requestActivate();
-+    d->quickWidget->setFocus();
- }
- 
- QSize KCModuleQml::sizeHint() const
--- 
-2.11.0
-
