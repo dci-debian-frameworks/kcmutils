@@ -1,8 +1,6 @@
-diff --git a/CMakeLists.txt b/CMakeLists.txt
-index e886a6c..ba1e3ab 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -17,7 +17,7 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+@@ -17,7 +17,7 @@
  include(KDECMakeSettings)
  
  set(REQUIRED_QT_VERSION 5.6.0)
@@ -11,11 +9,9 @@ index e886a6c..ba1e3ab 100644
  
  
  include(GenerateExportHeader)
-diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 0a17f4a..1678652 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -28,7 +28,6 @@ target_link_libraries(KF5KCMUtils
+@@ -28,7 +28,6 @@
      Qt5::DBus       # dbus usage in kcmoduleproxy.cpp
      Qt5::Qml
      Qt5::Quick
@@ -23,8 +19,6 @@ index 0a17f4a..1678652 100644
      KF5::CoreAddons
      KF5::I18n
      KF5::IconThemes     # KIconLoader
-diff --git a/src/kcmoduleqml.cpp b/src/kcmoduleqml.cpp
-index 3191ddf..70b8a68 100644
 --- a/src/kcmoduleqml.cpp
 +++ b/src/kcmoduleqml.cpp
 @@ -27,7 +27,6 @@
@@ -35,7 +29,7 @@ index 3191ddf..70b8a68 100644
  
  #include <kdeclarative/kdeclarative.h>
  #include <kquickaddons/configmodule.h>
-@@ -107,20 +106,16 @@ void KCModuleQml::showEvent(QShowEvent *event)
+@@ -107,20 +106,16 @@
  
      QVBoxLayout* layout = new QVBoxLayout(this);
  
