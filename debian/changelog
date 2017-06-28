@@ -40,6 +40,13 @@ kcmutils (5.29.0-0neon) xenial; urgency=medium
 
  -- Neon CI <neon@kde.org>  Fri, 09 Dec 2016 19:06:24 +0000
 
+kcmutils (5.28.0-2) unstable; urgency=medium
+
+  * Add new upstream patch:
+    KCModuleQML-Pass-the-window-as-context-for-paletteChanged.patch
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 30 Mar 2017 14:45:25 +0200
+
 kcmutils (5.28.0-1) unstable; urgency=medium
 
   [ Automatic packaging ]
