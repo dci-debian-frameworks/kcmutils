@@ -1,17 +1,21 @@
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
-@@ -17,7 +17,7 @@
+Index: kcmutils-5.38.0/CMakeLists.txt
+===================================================================
+--- kcmutils-5.38.0.orig/CMakeLists.txt
++++ kcmutils-5.38.0/CMakeLists.txt
+@@ -17,7 +17,7 @@ include(KDEFrameworkCompilerSettings NO_
  include(KDECMakeSettings)
  
- set(REQUIRED_QT_VERSION 5.6.0)
+ set(REQUIRED_QT_VERSION 5.7.0)
 -find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus Qml Quick QuickWidgets)
 +find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus Qml Quick)
  
  
  include(GenerateExportHeader)
---- a/src/CMakeLists.txt
-+++ b/src/CMakeLists.txt
-@@ -28,7 +28,6 @@
+Index: kcmutils-5.38.0/src/CMakeLists.txt
+===================================================================
+--- kcmutils-5.38.0.orig/src/CMakeLists.txt
++++ kcmutils-5.38.0/src/CMakeLists.txt
+@@ -28,7 +28,6 @@ target_link_libraries(KF5KCMUtils
      Qt5::DBus       # dbus usage in kcmoduleproxy.cpp
      Qt5::Qml
      Qt5::Quick
@@ -19,8 +23,10 @@
      KF5::CoreAddons
      KF5::I18n
      KF5::IconThemes     # KIconLoader
---- a/src/kcmoduleqml.cpp
-+++ b/src/kcmoduleqml.cpp
+Index: kcmutils-5.38.0/src/kcmoduleqml.cpp
+===================================================================
+--- kcmutils-5.38.0.orig/src/kcmoduleqml.cpp
++++ kcmutils-5.38.0/src/kcmoduleqml.cpp
 @@ -27,7 +27,6 @@
  #include <QQuickWindow>
  #include <QQuickItem>
@@ -29,7 +35,7 @@
  
  #include <kdeclarative/kdeclarative.h>
  #include <kquickaddons/configmodule.h>
-@@ -107,20 +106,16 @@
+@@ -107,20 +106,16 @@ void KCModuleQml::showEvent(QShowEvent *
  
      QVBoxLayout* layout = new QVBoxLayout(this);
  
