@@ -1,10 +1,5 @@
-# SymbolsHelper-Confirmed: 5.18.0 amd64
+# SymbolsHelper-Confirmed: 5.41.0 amd64
 libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
- _ZN12KCModuleInfo7Private7loadAllEv@Base 4.96.0
- _ZN12KCModuleInfo7PrivateC1E28QExplicitlySharedDataPointerI8KServiceE@Base 4.96.0
- _ZN12KCModuleInfo7PrivateC1Ev@Base 4.96.0
- _ZN12KCModuleInfo7PrivateC2E28QExplicitlySharedDataPointerI8KServiceE@Base 4.96.0
- _ZN12KCModuleInfo7PrivateC2Ev@Base 4.96.0
  _ZN12KCModuleInfoC1E28QExplicitlySharedDataPointerI8KServiceE@Base 4.96.0
  _ZN12KCModuleInfoC1ERK7QString@Base 4.96.0
  _ZN12KCModuleInfoC1ERKS_@Base 4.96.0
@@ -75,55 +70,6 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZN15KPluginSelector25setConfigurationArgumentsERK11QStringList@Base 5.8.0+git20150316.0112+15.04
  _ZN15KPluginSelector4loadEv@Base 4.96.0
  _ZN15KPluginSelector4saveEv@Base 4.96.0
- _ZN15KPluginSelector7Private10ProxyModelC1EPS0_P7QObject@Base 4.96.0
- _ZN15KPluginSelector7Private10ProxyModelC2EPS0_P7QObject@Base 4.96.0
- _ZN15KPluginSelector7Private10ProxyModelD0Ev@Base 4.96.0
- _ZN15KPluginSelector7Private10ProxyModelD1Ev@Base 4.96.0
- _ZN15KPluginSelector7Private10ProxyModelD2Ev@Base 4.96.0
- _ZN15KPluginSelector7Private11PluginModel10addPluginsERK5QListI11KPluginInfoERK7QStringS9_RK12KConfigGroupNS_16PluginLoadMethodEb@Base 4.96.0
- _ZN15KPluginSelector7Private11PluginModel7setDataERK11QModelIndexRK8QVarianti@Base 4.96.0
- _ZN15KPluginSelector7Private11PluginModelC1EPS0_P7QObject@Base 4.96.0
- _ZN15KPluginSelector7Private11PluginModelC2EPS0_P7QObject@Base 4.96.0
- _ZN15KPluginSelector7Private11PluginModelD0Ev@Base 4.96.0
- _ZN15KPluginSelector7Private11PluginModelD1Ev@Base 4.96.0
- _ZN15KPluginSelector7Private11PluginModelD2Ev@Base 4.96.0
- _ZN15KPluginSelector7Private11qt_metacallEN11QMetaObject4CallEiPPv@Base 4.96.0
- _ZN15KPluginSelector7Private11qt_metacastEPKc@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate11emitChangedEv@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate11qt_metacallEN11QMetaObject4CallEiPPv@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate11qt_metacastEPKc@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate15configCommittedERK10QByteArray@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate16slotAboutClickedEv@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate16slotStateChangedEb@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate16staticMetaObjectE@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate18slotDefaultClickedEv@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate20slotConfigureClickedEv@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegate7changedEb@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegateC1EPS0_P7QObject@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegateC2EPS0_P7QObject@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegateD0Ev@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegateD1Ev@Base 4.96.0
- _ZN15KPluginSelector7Private14PluginDelegateD2Ev@Base 4.96.0
- _ZN15KPluginSelector7Private16staticMetaObjectE@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidget11qt_metacastEPKc@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidget13addDependencyERK7QStringS4_b@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidget13updateDetailsEv@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidget16staticMetaObjectE@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidget17clearDependenciesEv@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidget21showDependencyDetailsEv@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidget22userOverrideDependencyERK7QString@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidgetC1EP7QWidget@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidgetC2EP7QWidget@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidgetD0Ev@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidgetD1Ev@Base 4.96.0
- _ZN15KPluginSelector7Private18DependenciesWidgetD2Ev@Base 4.96.0
- _ZN15KPluginSelector7Private18updateDependenciesEP11PluginEntryb@Base 4.96.0
- _ZN15KPluginSelector7PrivateC1EPS_@Base 4.96.0
- _ZN15KPluginSelector7PrivateC2EPS_@Base 4.96.0
- _ZN15KPluginSelector7PrivateD0Ev@Base 4.96.0
- _ZN15KPluginSelector7PrivateD1Ev@Base 4.96.0
- _ZN15KPluginSelector7PrivateD2Ev@Base 4.96.0
  _ZN15KPluginSelector7changedEb@Base 4.96.0
  _ZN15KPluginSelector8defaultsEv@Base 4.96.0
  _ZN15KPluginSelectorC1EP7QWidget@Base 4.96.0
@@ -220,21 +166,6 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZNK13KCMultiDialog10metaObjectEv@Base 4.96.0
  _ZNK15KPluginSelector10metaObjectEv@Base 4.96.0
  _ZNK15KPluginSelector22configurationArgumentsEv@Base 5.8.0+git20150316.0112+15.04
- _ZNK15KPluginSelector7Private10ProxyModel15subSortLessThanERK11QModelIndexS4_@Base 4.96.0
- _ZNK15KPluginSelector7Private10ProxyModel16filterAcceptsRowEiRK11QModelIndex@Base 4.96.0
- _ZNK15KPluginSelector7Private10metaObjectEv@Base 4.96.0
- _ZNK15KPluginSelector7Private11PluginModel14pluginServicesERK11QModelIndex@Base 4.96.0
- _ZNK15KPluginSelector7Private11PluginModel4dataERK11QModelIndexi@Base 4.96.0
- _ZNK15KPluginSelector7Private11PluginModel5indexEiiRK11QModelIndex@Base 4.96.0
- _ZNK15KPluginSelector7Private11PluginModel8rowCountERK11QModelIndex@Base 4.96.0
- _ZNK15KPluginSelector7Private14PluginDelegate10metaObjectEv@Base 4.96.0
- _ZNK15KPluginSelector7Private14PluginDelegate17createItemWidgetsERK11QModelIndex@Base 4.96.0
- _ZNK15KPluginSelector7Private14PluginDelegate17updateItemWidgetsE5QListIP7QWidgetERK20QStyleOptionViewItemRK21QPersistentModelIndex@Base 4.96.0
- _ZNK15KPluginSelector7Private14PluginDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex@Base 4.96.0
- _ZNK15KPluginSelector7Private14PluginDelegate8sizeHintERK20QStyleOptionViewItemRK11QModelIndex@Base 4.96.0
- _ZNK15KPluginSelector7Private14PluginDelegate9titleFontERK5QFont@Base 4.96.0
- _ZNK15KPluginSelector7Private18DependenciesWidget10metaObjectEv@Base 4.96.0
- _ZNK15KPluginSelector7Private20dependantLayoutValueEiii@Base 4.96.0
  _ZNK15KPluginSelector9isDefaultEv@Base 4.96.0
  _ZNK17KCModuleContainer10metaObjectEv@Base 4.96.0
  _ZNK9KSettings10PluginPage10metaObjectEv@Base 4.96.0
@@ -246,11 +177,6 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZTI13KCMultiDialog@Base 4.96.0
  _ZTI15KPluginSelector@Base 4.96.0
  _ZTI17KCModuleContainer@Base 4.96.0
- _ZTIN15KPluginSelector7Private10ProxyModelE@Base 4.96.0
- _ZTIN15KPluginSelector7Private11PluginModelE@Base 4.96.0
- _ZTIN15KPluginSelector7Private14PluginDelegateE@Base 4.96.0
- _ZTIN15KPluginSelector7Private18DependenciesWidgetE@Base 4.96.0
- _ZTIN15KPluginSelector7PrivateE@Base 4.96.0
  _ZTIN9KSettings10PluginPageE@Base 4.96.0
  _ZTIN9KSettings16ComponentsDialogE@Base 4.96.0
  _ZTIN9KSettings6DialogE@Base 4.96.0
@@ -258,11 +184,6 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZTS13KCMultiDialog@Base 4.96.0
  _ZTS15KPluginSelector@Base 4.96.0
  _ZTS17KCModuleContainer@Base 4.96.0
- _ZTSN15KPluginSelector7Private10ProxyModelE@Base 4.96.0
- _ZTSN15KPluginSelector7Private11PluginModelE@Base 4.96.0
- _ZTSN15KPluginSelector7Private14PluginDelegateE@Base 4.96.0
- _ZTSN15KPluginSelector7Private18DependenciesWidgetE@Base 4.96.0
- _ZTSN15KPluginSelector7PrivateE@Base 4.96.0
  _ZTSN9KSettings10PluginPageE@Base 4.96.0
  _ZTSN9KSettings16ComponentsDialogE@Base 4.96.0
  _ZTSN9KSettings6DialogE@Base 4.96.0
@@ -270,11 +191,6 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  _ZTV13KCMultiDialog@Base 4.96.0
  _ZTV15KPluginSelector@Base 4.96.0
  _ZTV17KCModuleContainer@Base 4.96.0
- _ZTVN15KPluginSelector7Private10ProxyModelE@Base 4.96.0
- _ZTVN15KPluginSelector7Private11PluginModelE@Base 4.96.0
- _ZTVN15KPluginSelector7Private14PluginDelegateE@Base 4.96.0
- _ZTVN15KPluginSelector7Private18DependenciesWidgetE@Base 4.96.0
- _ZTVN15KPluginSelector7PrivateE@Base 4.96.0
  _ZTVN9KSettings10PluginPageE@Base 4.96.0
  _ZTVN9KSettings16ComponentsDialogE@Base 4.96.0
  _ZTVN9KSettings6DialogE@Base 4.96.0
@@ -282,7 +198,6 @@ libKF5KCMUtils.so.5 libkf5kcmutils5 #MINVER#
  (c++)"non-virtual thunk to KCModuleContainer::~KCModuleContainer()@Base" 4.96.0
  (c++)"non-virtual thunk to KCModuleProxy::~KCModuleProxy()@Base" 4.96.0
  (c++)"non-virtual thunk to KCMultiDialog::~KCMultiDialog()@Base" 4.96.0
- (c++)"non-virtual thunk to KPluginSelector::Private::DependenciesWidget::~DependenciesWidget()@Base" 4.96.0
  (c++)"non-virtual thunk to KPluginSelector::~KPluginSelector()@Base" 4.96.0
  (c++)"non-virtual thunk to KSettings::ComponentsDialog::~ComponentsDialog()@Base" 4.96.0
  (c++)"non-virtual thunk to KSettings::Dialog::~Dialog()@Base" 4.96.0
