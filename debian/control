@@ -54,7 +54,7 @@ Description: Extra APIs to write KConfig modules.
  Some utility classes for KSettings, KCModule and KPlugin.
  .
  Contains development files for kcmutils.
-Breaks: libkf5kdelibs4support-dev (<< 5.37)
+Breaks: libkf5kdelibs4support-dev (<< 5.41)
 
 Package: libkf5kcmutils-doc
 Section: doc
